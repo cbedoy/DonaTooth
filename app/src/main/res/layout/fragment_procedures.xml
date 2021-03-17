@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/custom_view_header"/>
+
+
+            <include layout="@layout/custom_view_section"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                tools:itemCount="1"
+                tools:orientation="horizontal"
+                tools:listitem="@layout/view_holder_procedure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <include layout="@layout/custom_view_section"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                tools:itemCount="2"
+                tools:orientation="horizontal"
+                tools:listitem="@layout/view_holder_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

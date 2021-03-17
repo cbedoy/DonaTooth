@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@color/header_color"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Schedule"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:fontFamily="sans-serif-black"
+            android:text="- December -"
+            android:textColor="@color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            tools:itemCount="1"
+            android:layout_marginTop="32dp"
+            tools:listitem="@layout/view_holder_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="-24dp"
+        android:src="@drawable/half_circle"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+    </ImageView>
+
+</LinearLayout>
