@@ -16,6 +16,8 @@
     <color name="primaryDark">#3F62AA</color>
     <color name="accent">#CA2E2D</color>
 
+    <color name="primaryAlpha">#3F62AA</color>
+
 
     <color name="success_color">#3F62AA</color>
     <color name="error_color">#CA2E2D</color>

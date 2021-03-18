@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">DonaTooth</string>
+    <string name="completed_appointments">Completed appointments</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</string>
+    <string name="dona"><u>Dona</u></string>
 </resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/custom_navigation_background"
+    android:layout_width="match_parent"
+    android:layout_height="96dp">
+
+    <ImageView
+        android:id="@+id/actionHome"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="@dimen/half_margin"
+        app:srcCompat="@drawable/bottom_home_off"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/actionBalance"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="@dimen/half_margin"
+        app:srcCompat="@drawable/bottom_tools_off"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <cbedoy.dona.tooth.views.BottomActionMain
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/half_margin"
+        android:layout_marginEnd="@dimen/half_margin"
+        android:layout_width="64dp"
+        android:layout_height="64dp"/>
+
+    <ImageView
+        android:id="@+id/actionAppointments"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="@dimen/half_margin"
+        app:srcCompat="@drawable/bottom_appointment_off"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/actionSupport"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="@dimen/half_margin"
+        app:srcCompat="@drawable/bottom_settings_off"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

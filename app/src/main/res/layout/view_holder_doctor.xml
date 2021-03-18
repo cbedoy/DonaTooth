@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="@font/roboto_black"
                 android:text="Dra. Vanessa Donato"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/avatar"
@@ -46,60 +46,29 @@
                 android:id="@+id/speciality"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
+                android:fontFamily="@font/roboto_medium"
                 android:text="Pediatric dentist"
                 app:layout_constraintEnd_toEndOf="@+id/name"
                 app:layout_constraintStart_toStartOf="@+id/name"
                 app:layout_constraintTop_toBottomOf="@+id/name" />
 
-            <LinearLayout
-                android:id="@+id/schedules"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewSchedules"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="16dp"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/speciality"
-                app:layout_constraintStart_toStartOf="@+id/speciality"
-                app:layout_constraintTop_toBottomOf="@+id/speciality">
+                app:layout_constraintStart_toEndOf="@+id/avatar"
+                app:layout_constraintTop_toBottomOf="@+id/speciality"
+                tools:itemCount="1"
+                tools:listitem="@layout/view_holder_schedule">
 
 
-                <TextView
-                    android:layout_width="60dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="@dimen/micro_margin"
-                    android:background="@drawable/rounded_corners_accent"
-                    android:fontFamily="sans-serif-medium"
-                    android:gravity="center"
-                    android:padding="@dimen/micro_margin"
-                    android:paddingStart="0dp"
-                    android:paddingEnd="16dp"
-                    android:text="10 am"
-                    android:textColor="@color/white" />
-
-                <TextView
-                    android:layout_width="60dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="@dimen/micro_margin"
-                    android:fontFamily="sans-serif-light"
-                    android:padding="@dimen/micro_margin"
-                    android:paddingStart="0dp"
-                    android:paddingEnd="16dp"
-                    android:text="12 pm" />
-
-                <TextView
-                    android:layout_width="60dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="@dimen/micro_margin"
-                    android:fontFamily="sans-serif-light"
-                    android:padding="@dimen/micro_margin"
-                    android:paddingStart="0dp"
-                    android:paddingEnd="16dp"
-                    android:text="2 pm" />
-
-
-            </LinearLayout>
+            </androidx.recyclerview.widget.RecyclerView>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>

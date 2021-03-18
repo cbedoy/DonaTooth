@@ -13,10 +13,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <include layout="@layout/custom_view_header"/>
+            <cbedoy.dona.tooth.views.ScheduleHeaderView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
 
-            <include layout="@layout/custom_view_section"/>
+            <cbedoy.dona.tooth.views.SectionView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 tools:itemCount="1"
@@ -27,7 +31,9 @@
 
             </androidx.recyclerview.widget.RecyclerView>
 
-            <include layout="@layout/custom_view_section"/>
+            <cbedoy.dona.tooth.views.SectionView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 tools:itemCount="2"
